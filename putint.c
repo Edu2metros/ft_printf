@@ -1,16 +1,21 @@
-# include <stdlib.h>
-# include <unistd.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
 
-size_t ft_putstr(char *str)
+size_t	get_digits(int n);
+
+size_t	ft_putstr(char *str)
 {
-	size_t size;
+	size_t	size;
+
 	size = 0;
-	while(*str)
+	while (*str)
 	{
 		write(1, str, 1);
 		size++;
+		str++;
 	}
-	return(size);
+	return (size);
 }
 
 char	*ft_itoa(int n)
@@ -18,7 +23,8 @@ char	*ft_itoa(int n)
 	long int	num;
 	size_t		digits;
 	char		*result;
-	int temp;
+	int			temp;
+
 	num = n;
 	digits = get_digits(num);
 	if (n < 0)
@@ -38,12 +44,13 @@ char	*ft_itoa(int n)
 	if (n < 0)
 		*result = '-';
 	temp = ft_putstr(result);
-	return(temp);
+	printf("\n%i\n", temp);
+	return (temp);
 }
 
 size_t	get_digits(int n)
 {
-	int size;
+	int	size;
 
 	size = 1;
 	while (n / 10)
@@ -54,7 +61,7 @@ size_t	get_digits(int n)
 	return (size);
 }
 
-int main(void)
+int	main(void)
 {
-	ft_itoa(112);
+	ft_itoa(9999999);
 }

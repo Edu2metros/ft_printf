@@ -6,7 +6,7 @@
 /*   By: eddos-sa <eddos-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/29 18:45:17 by eddos-sa          #+#    #+#             */
-/*   Updated: 2023/08/29 19:23:26 by eddos-sa         ###   ########.fr       */
+/*   Updated: 2023/08/29 19:25:01 by eddos-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 
 int	main(void)
 {
-	int	decimalValue = 438;
+	int	decimalValue = 43;
 	printf("Valor em decimal: %d\n", decimalValue);
 	printf("Valor em hexadecimal (minúsculas): %x\n", decimalValue);
 	printf("Valor em hexadecimal (maiúsculas): %X\n", decimalValue);

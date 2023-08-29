@@ -10,6 +10,10 @@
 #include <stdio.h>
 int main(void)
 {
-int num = -42;
-printf("Número inteiro: %d", num);
+int num = 10;
+printf("Número em decimal: %d\n", num);
+printf("Número em hexadecimal: %i\n", num); // Equivalente a "%x"
+printf("Número em octal: %u\n", num);       // Equivalente a "%o"
+
 }
+

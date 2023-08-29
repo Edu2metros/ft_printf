@@ -6,7 +6,7 @@
 /*   By: eddos-sa <eddos-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/29 18:45:17 by eddos-sa          #+#    #+#             */
-/*   Updated: 2023/08/29 19:16:06 by eddos-sa         ###   ########.fr       */
+/*   Updated: 2023/08/29 19:19:19 by eddos-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,3 +16,11 @@
 • %X Prints a number in hexadecimal (base 16) uppercase format. */
 #include "printf.h"
 #include <stdio.h>
+
+int	main(void)
+{
+	int	decimalValue = 10230;
+	printf("Valor em decimal: %d\n", decimalValue);
+	printf("Valor em hexadecimal (minúsculas): %x\n", decimalValue);
+	printf("Valor em hexadecimal (maiúsculas): %X\n", decimalValue);
+}

@@ -1,5 +1,7 @@
 char ft_putchar(char c)
 {
+	size_t size;
 	write(1, &c, 1);
-	return(c);
+	size++;
+	return(size);
 }

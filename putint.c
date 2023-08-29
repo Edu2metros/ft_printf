@@ -41,7 +41,7 @@ char	*ft_itoa(int n)
 	return(temp);
 }
 
-static size_t	get_digits(int n)
+size_t	get_digits(int n)
 {
 	int size;
 

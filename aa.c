@@ -74,8 +74,10 @@ static char	*create_word(const char **s, char c)
 	*dst = '\0';
 	return (new_word);
 }
-
+#include <stdio.h>
 int main(void)
 {
-
+	char teste = "esssssdusssssardo dsos sanstos gomses ";
+	char teste2 = ft_split(teste, 's');
+	printf("%s\n", teste2);
 }

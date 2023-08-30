@@ -6,7 +6,7 @@
 /*   By: eddos-sa <eddos-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/29 18:46:16 by eddos-sa          #+#    #+#             */
-/*   Updated: 2023/08/30 16:52:14 by eddos-sa         ###   ########.fr       */
+/*   Updated: 2023/08/30 16:55:00 by eddos-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,14 +31,12 @@ int	ft_putnbr(int nbr)
 	size = 0;
 	if (nbr >= 0 && nbr < 10)
 	{
-		ft_putchar(nbr + '0');
-		size++;
+		size = ft_putchar(nbr + '0');
 	}
 	else if (nbr > 9)
 	{
 		ft_putnbr(nbr / 10);
-		ft_putchar(nbr % 10 + '0');
-		size++;
+		size = ft_putchar(nbr % 10 + '0');
 	}
 	else
 	{

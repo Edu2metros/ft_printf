@@ -6,17 +6,14 @@
 /*   By: eddos-sa <eddos-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/29 18:45:39 by eddos-sa          #+#    #+#             */
-/*   Updated: 2023/08/30 16:23:57 by eddos-sa         ###   ########.fr       */
+/*   Updated: 2023/08/30 17:46:38 by eddos-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
 • %p The void * pointer argument has to be printed in hexadecimal format.
-• %u Prints an unsigned decimal (base 10) number.
 • %x Prints a number in hexadecimal (base 16) lowercase format.
 • %X Prints a number in hexadecimal (base 16) uppercase format.
-• %% Prints a percent sign
-
  */
 
 #ifndef PRINTF_H

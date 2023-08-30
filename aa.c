@@ -6,7 +6,7 @@
 /*   By: eddos-sa <eddos-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/29 18:45:17 by eddos-sa          #+#    #+#             */
-/*   Updated: 2023/08/30 13:31:27 by eddos-sa         ###   ########.fr       */
+/*   Updated: 2023/08/30 13:35:19 by eddos-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,14 +17,17 @@
 #include "printf.h"
 #include <stdio.h>
 
-char ft_hexa(int number)
+char ft_hexa_min(int number)
 {
 	if(number >= 0 && number <= 9)
 		ft_putchar(number + '0');
-	
-		
+	else if(number >= 10 && number <= 15)
+		ft_putchar(number + 'a');
 }
 int	main(void)
 {
-printf("%x\n", 120842);
+int number = 5;
+int number2 = 14;
+ft_hexa_min(number);
+ft_hexa_min(number2);
 }

@@ -6,7 +6,7 @@
 /*   By: eddos-sa <eddos-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/29 18:45:17 by eddos-sa          #+#    #+#             */
-/*   Updated: 2023/08/30 17:54:43 by eddos-sa         ###   ########.fr       */
+/*   Updated: 2023/08/30 17:58:43 by eddos-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,21 +17,9 @@
 #include "printf.h"
 #include <stdio.h>
 
-size_t	puthex(unsigned int num, char x)
+int	ft_puthex(int nbr)
 {
-	size_t size;
-	char x;
-	size = 0;
-	if(num > 0)
-	{
-		num /= 16;
-		
-	}
-}
-
-int	ft_putnbr(int nbr)
-{
-	int	size;
+	int size;
 
 	size = 0;
 	if (nbr < 0)
@@ -49,4 +37,9 @@ int	ft_putnbr(int nbr)
 		size += ft_putchar(nbr % 10 + '0');
 	}
 	return (size);
+}
+
+int main(void)
+{
+	printf("%x", 255);
 }

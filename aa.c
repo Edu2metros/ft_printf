@@ -6,7 +6,7 @@
 /*   By: eddos-sa <eddos-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/29 18:45:17 by eddos-sa          #+#    #+#             */
-/*   Updated: 2023/08/30 13:40:38 by eddos-sa         ###   ########.fr       */
+/*   Updated: 2023/08/30 13:41:19 by eddos-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,5 +38,8 @@ int	main(void)
 {
 	int number = 5;
 	int number2 = 15;
-	ft_hexa_min(number2);
+	ft_hexa_min(number);
+	printf("%c\n");
+	
+	
 }

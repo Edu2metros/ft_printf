@@ -6,7 +6,7 @@
 /*   By: eddos-sa <eddos-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/29 18:46:16 by eddos-sa          #+#    #+#             */
-/*   Updated: 2023/08/30 16:44:50 by eddos-sa         ###   ########.fr       */
+/*   Updated: 2023/08/30 16:51:03 by eddos-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,16 +17,10 @@
  */
 int	ft_putnbr(int nbr)
 {
-	int size;
+	int	size;
+
 	size = 0;
-	if (nbr == -2147483648)
-	{
-		write(1, "-", 1);
-		ft_putnbr(2);
-		ft_putnbr(147483648);
-		size++;
-	}
-	else if (nbr >= 0 && nbr < 10)
+	if (nbr >= 0 && nbr < 10)
 	{
 		ft_putchar(nbr + '0');
 		size++;
@@ -43,15 +37,14 @@ int	ft_putnbr(int nbr)
 		ft_putnbr(nbr * -1);
 		size++;
 	}
-	return(size);
+	return (size);
 }
 
-int main(void)
+int	main(void)
 {
-	// int size;
-	
-	// size = ft_putnbr(1234);
-	// printf("\n%i\n", size);
-	printf("%i\n", -2147483647);
-}
+	int	size;
 
+	printf("\n%i\n", -87);
+	size = ft_putnbr(-87);
+	printf("\n%i\n", size);
+}

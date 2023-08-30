@@ -6,12 +6,11 @@
 /*   By: eddos-sa <eddos-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/29 18:45:39 by eddos-sa          #+#    #+#             */
-/*   Updated: 2023/08/30 16:20:23 by eddos-sa         ###   ########.fr       */
+/*   Updated: 2023/08/30 16:21:50 by eddos-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-• %s Prints a string (as defined by the common C convention).
 • %p The void * pointer argument has to be printed in hexadecimal format.
 • %d Prints a decimal (base 10) number.
 • %i Prints an integer in base 10.

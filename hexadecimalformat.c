@@ -6,7 +6,7 @@
 /*   By: eddos-sa <eddos-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/29 18:45:17 by eddos-sa          #+#    #+#             */
-/*   Updated: 2023/08/30 13:59:34 by eddos-sa         ###   ########.fr       */
+/*   Updated: 2023/08/30 14:02:26 by eddos-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 #include "printf.h"
 #include <stdio.h>
 
-size_t	ft_hexa_min(int number)
+size_t ft_hexa(int number)
 {
 	size_t	size;
 	size_t	temp;

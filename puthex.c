@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   hexadecimalformat.c                                :+:      :+:    :+:   */
+/*   puthex.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: eddos-sa <eddos-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/29 18:45:17 by eddos-sa          #+#    #+#             */
-/*   Updated: 2023/08/30 14:29:48 by eddos-sa         ###   ########.fr       */
+/*   Updated: 2023/08/30 17:54:43 by eddos-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,4 +27,26 @@ size_t	puthex(unsigned int num, char x)
 		num /= 16;
 		
 	}
+}
+
+int	ft_putnbr(int nbr)
+{
+	int	size;
+
+	size = 0;
+	if (nbr < 0)
+	{
+		size += ft_putchar('-');
+		nbr = -nbr;
+	}
+	if (nbr < 10)
+	{
+		size += ft_putchar(nbr + '0');
+	}
+	else
+	{
+		size += ft_putnbr(nbr / 10);
+		size += ft_putchar(nbr % 10 + '0');
+	}
+	return (size);
 }

@@ -6,15 +6,12 @@
 /*   By: eddos-sa <eddos-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/29 18:46:16 by eddos-sa          #+#    #+#             */
-/*   Updated: 2023/08/30 16:56:57 by eddos-sa         ###   ########.fr       */
+/*   Updated: 2023/08/30 17:33:25 by eddos-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "printf.h"
 
-/* • %d Prints a decimal (base 10) number.
-• %i Prints an integer in base 10.
- */
 int ft_putnbr(int nbr)
 {
     int size = 0;
@@ -22,7 +19,7 @@ int ft_putnbr(int nbr)
     if (nbr < 0)
     {
         size += ft_putchar('-');
-        nbr = -nbr; // Convert negative number to positive
+        nbr = -nbr;
     }
 
     if (nbr < 10)

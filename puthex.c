@@ -6,7 +6,7 @@
 /*   By: eddos-sa <eddos-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/29 18:45:17 by eddos-sa          #+#    #+#             */
-/*   Updated: 2023/08/30 17:59:20 by eddos-sa         ###   ########.fr       */
+/*   Updated: 2023/08/30 18:04:37 by eddos-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 #include "printf.h"
 #include <stdio.h>
 
-int	ft_puthex(int nbr)
+int	ft_puthex(unsigned int nbr)
 {
 	int size;
 

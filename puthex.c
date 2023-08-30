@@ -6,7 +6,7 @@
 /*   By: eddos-sa <eddos-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/29 18:45:17 by eddos-sa          #+#    #+#             */
-/*   Updated: 2023/08/30 17:58:43 by eddos-sa         ###   ########.fr       */
+/*   Updated: 2023/08/30 17:59:20 by eddos-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,3 @@ int	ft_puthex(int nbr)
 	return (size);
 }
 
-int main(void)
-{
-	printf("%x", 255);
-}

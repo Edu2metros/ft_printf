@@ -6,7 +6,7 @@
 /*   By: eddos-sa <eddos-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/29 18:45:17 by eddos-sa          #+#    #+#             */
-/*   Updated: 2023/08/30 13:48:34 by eddos-sa         ###   ########.fr       */
+/*   Updated: 2023/08/30 13:50:39 by eddos-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ size_t	ft_hexa_min(int number)
 	size_t	size;
 
 	size = 0;
-
+	
 	return(size);
 }
 int	main(void)

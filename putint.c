@@ -6,7 +6,7 @@
 /*   By: eddos-sa <eddos-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/29 18:46:16 by eddos-sa          #+#    #+#             */
-/*   Updated: 2023/08/30 16:55:00 by eddos-sa         ###   ########.fr       */
+/*   Updated: 2023/08/30 16:56:57 by eddos-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,43 +15,35 @@
 /* • %d Prints a decimal (base 10) number.
 • %i Prints an integer in base 10.
  */
-size_t	ft_putchar(char c)
+int ft_putnbr(int nbr)
 {
-	size_t	size;
+    int size = 0;
 
-	size = 0;
-	write(1, &c, 1);
-	size++;
-	return (size);
-}
-int	ft_putnbr(int nbr)
-{
-	int	size;
+    if (nbr < 0)
+    {
+        size += ft_putchar('-');
+        nbr = -nbr; // Convert negative number to positive
+    }
 
-	size = 0;
-	if (nbr >= 0 && nbr < 10)
-	{
-		size = ft_putchar(nbr + '0');
-	}
-	else if (nbr > 9)
-	{
-		ft_putnbr(nbr / 10);
-		size = ft_putchar(nbr % 10 + '0');
-	}
-	else
-	{
-		ft_putchar('-');
-		ft_putnbr(nbr * -1);
-		size++;
-	}
-	return (size);
+    if (nbr < 10)
+    {
+        size += ft_putchar(nbr + '0');
+    }
+    else
+    {
+        size += ft_putnbr(nbr / 10);
+        size += ft_putchar(nbr % 10 + '0');
+    }
+
+    return size;
 }
 
-int	main(void)
+int main(void)
 {
-	int	size;
+    int size;
 
-	printf("\n%i\n", -87);
-	size = ft_putnbr(-87);
-	printf("\n%i\n", size);
+    printf("\n%i\n", 92494754);
+    size = ft_putnbr(92494754);
+    printf("\n%i\n", size);
 }
+

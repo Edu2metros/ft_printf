@@ -6,7 +6,7 @@
 /*   By: eddos-sa <eddos-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/29 18:45:17 by eddos-sa          #+#    #+#             */
-/*   Updated: 2023/08/30 14:15:45 by eddos-sa         ###   ########.fr       */
+/*   Updated: 2023/08/30 14:22:10 by eddos-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,32 +17,3 @@
 #include "printf.h"
 #include <stdio.h>
 
-size_t	ft_hexa(int number)
-{
-	size_t	size;
-	size_t	temp;
-
-	size = 0;
-	while (number / 16 > 10)
-	{
-		temp = puthex(number);
-	}
-	return (size);
-}
-
-int	puthex(int *number)
-{
-	while (*number)
-		number++;
-	
-}
-int	main(void)
-{
-	int number = 5;
-	int number2 = 15;
-	ft_hexa_min(number);
-	printf("%c\n");
-	ft_hexa_min(number2);
-	printf("%c\n");
-	printf("%i\n", ft_hexa_min(number));
-}

@@ -6,7 +6,7 @@
 /*   By: eddos-sa <eddos-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/29 18:45:17 by eddos-sa          #+#    #+#             */
-/*   Updated: 2023/08/30 13:26:15 by eddos-sa         ###   ########.fr       */
+/*   Updated: 2023/08/30 13:28:55 by eddos-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,12 +17,12 @@
 #include "printf.h"
 #include <stdio.h>
 
-int	main(void)
-{
-printf("%x\n", 120842);
-}
 
 char ft_hexa(int number)
 {
 	
+}
+int	main(void)
+{
+printf("%x\n", 120842);
 }

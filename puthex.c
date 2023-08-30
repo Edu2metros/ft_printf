@@ -6,14 +6,12 @@
 /*   By: eddos-sa <eddos-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/29 18:45:17 by eddos-sa          #+#    #+#             */
-/*   Updated: 2023/08/30 20:07:42 by eddos-sa         ###   ########.fr       */
+/*   Updated: 2023/08/30 20:09:14 by eddos-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-• %p The void * pointer argument has to be printed in hexadecimal format.
-• %x Prints a number in hexadecimal (base 16) lowercase format.
-• %X Prints a number in hexadecimal (base 16) uppercase format. */
+• %p The void * pointer argument has to be printed in hexadecimal format. */
 #include "printf.h"
 #include <stdio.h>
 
@@ -35,9 +33,4 @@ int    ft_puthex(unsigned int nbr, char x)
     else
         size += ft_putchar(nbr % 16 + '0');
     return (size);
-}
-
-int	main(void)
-{
-	ft_puthex(1000, 'x');
 }

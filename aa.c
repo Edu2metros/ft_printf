@@ -6,7 +6,7 @@
 /*   By: eddos-sa <eddos-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/29 18:45:17 by eddos-sa          #+#    #+#             */
-/*   Updated: 2023/08/30 13:42:21 by eddos-sa         ###   ########.fr       */
+/*   Updated: 2023/08/30 13:46:05 by eddos-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,16 +22,7 @@ size_t	ft_hexa_min(int number)
 	size_t	size;
 
 	size = 0;
-	if (number >= 0 && number <= 9)
-	{
-		ft_putchar(number + '0');
-		size++;
-	}
-	else if (number >= 10 && number <= 15)
-	{
-		ft_putchar(number + 'a');
-		size++;
-	}
+
 	return(size);
 }
 int	main(void)

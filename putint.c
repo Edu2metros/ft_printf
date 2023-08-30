@@ -6,7 +6,7 @@
 /*   By: eddos-sa <eddos-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/29 18:46:16 by eddos-sa          #+#    #+#             */
-/*   Updated: 2023/08/30 16:51:03 by eddos-sa         ###   ########.fr       */
+/*   Updated: 2023/08/30 16:52:14 by eddos-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,15 @@
 /* • %d Prints a decimal (base 10) number.
 • %i Prints an integer in base 10.
  */
+size_t	ft_putchar(char c)
+{
+	size_t	size;
+
+	size = 0;
+	write(1, &c, 1);
+	size++;
+	return (size);
+}
 int	ft_putnbr(int nbr)
 {
 	int	size;

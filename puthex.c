@@ -6,7 +6,7 @@
 /*   By: eddos-sa <eddos-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/29 18:45:17 by eddos-sa          #+#    #+#             */
-/*   Updated: 2023/08/30 19:57:16 by eddos-sa         ###   ########.fr       */
+/*   Updated: 2023/08/30 20:01:44 by eddos-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,11 +55,11 @@ int	ft_puthex(unsigned int nbr, char x)
 			size += ft_putchar(nbr % 16 + 'A');
 	}
 	else
-		size += ft_putnbr(nbr);
+		size += ft_putchar(nbr % 16 + '0');
 	return (size);
 }
 
 int	main(void)
 {
-	ft_puthex(35, 'x');
+	ft_puthex(1000, 'x');
 }

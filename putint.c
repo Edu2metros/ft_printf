@@ -6,7 +6,7 @@
 /*   By: eddos-sa <eddos-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/29 18:46:16 by eddos-sa          #+#    #+#             */
-/*   Updated: 2023/08/30 16:24:06 by eddos-sa         ###   ########.fr       */
+/*   Updated: 2023/08/30 16:25:49 by eddos-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,8 +48,10 @@ int	ft_putnbr(int nbr)
 
 int main(void)
 {
-	int size;
+	// int size;
 	
-	size = ft_putnbr(1234);
-	printf("\n%i\n", size);
+	// size = ft_putnbr(1234);
+	// printf("\n%i\n", size);
+	printf("%d\n", -2147483648);
 }
+

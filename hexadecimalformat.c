@@ -6,7 +6,7 @@
 /*   By: eddos-sa <eddos-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/29 18:45:17 by eddos-sa          #+#    #+#             */
-/*   Updated: 2023/08/30 14:22:10 by eddos-sa         ###   ########.fr       */
+/*   Updated: 2023/08/30 14:27:25 by eddos-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,3 +17,11 @@
 #include "printf.h"
 #include <stdio.h>
 
+size_t	puthex(unsigned int num, char x)
+{
+	size_t size;
+	char x;
+	size = 0;
+	
+	
+}

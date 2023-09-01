@@ -6,7 +6,7 @@
 /*   By: eddos-sa <eddos-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/29 18:45:17 by eddos-sa          #+#    #+#             */
-/*   Updated: 2023/09/01 16:54:45 by eddos-sa         ###   ########.fr       */
+/*   Updated: 2023/09/01 17:11:52 by eddos-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 int	ft_puthex(unsigned int nbr, char x)
 {
 	int		size;
-	char	c;
 
 	size = 0;
 	if (nbr / 16 > 0)

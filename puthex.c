@@ -6,7 +6,7 @@
 /*   By: eddos-sa <eddos-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/29 18:45:17 by eddos-sa          #+#    #+#             */
-/*   Updated: 2023/09/01 20:04:55 by eddos-sa         ###   ########.fr       */
+/*   Updated: 2023/09/01 20:29:29 by eddos-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,21 +14,20 @@
 
 int	ft_puthex(unsigned int nbr, char x)
 {
-	int	size;
-	int	digit;
+	int		size;
+	char	c;
 
 	size = 0;
 	if (nbr / 16 > 0)
 		size += ft_puthex(nbr / 16, x);
-	digit = nbr % 16;
-	if (digit < 10)
-		size += ft_putchar('0' + digit);
-	else
+	if (nbr % 16 > 10)
 	{
 		if (x == 'x')
-			size += ft_putchar('a' + digit - 10);
-		else if (x == 'X')
-			size += ft_putchar('A' + digit - 10);
+			size += ft_putchar(nbr % 16 - 10 + 'a');
+		else
+			size += ft_putchar(nbr % 16 - 10 + 'A');
 	}
+	else
+		size += ft_putchar(nbr % 16 + '0');
 	return (size);
 }

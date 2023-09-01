@@ -6,19 +6,18 @@
 #    By: eddos-sa <eddos-sa@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/01 16:57:12 by eddos-sa          #+#    #+#              #
-#    Updated: 2023/09/01 17:11:30 by eddos-sa         ###   ########.fr        #
+#    Updated: 2023/09/01 17:15:36 by eddos-sa         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libftprintf.a
 
-SRCS = ft_printf.c \ putchar.c \ puthex.c \ putint.c \ putptr.c \ putstr.c \ putunsigned.c
+SRCS = ft_printf.c putchar.c puthex.c putint.c putptr.c putstr.c putunsigned.c
 
 OBJS = ${SRCS:.c=.o}
 
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
-rm = rm -f
 
 all: ${NAME}
 

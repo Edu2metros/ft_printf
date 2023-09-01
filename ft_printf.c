@@ -6,7 +6,7 @@
 /*   By: eddos-sa <eddos-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/01 15:37:06 by eddos-sa          #+#    #+#             */
-/*   Updated: 2023/09/01 17:26:45 by eddos-sa         ###   ########.fr       */
+/*   Updated: 2023/09/01 17:57:42 by eddos-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,12 +39,12 @@ int	ft_printf(const char *str, ...)
 	size_t	sizetotal;
 	size_t	size;
 
-	sizetotal = 0;
-	size = 0;
 	va_list(ap);
 	if (!str)
 		return (-1);
 	va_start(ap, str);
+	sizetotal = 0;
+	size = 0;
 	while (*str)
 	{
 		if (*str == '%')

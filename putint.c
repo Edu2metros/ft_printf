@@ -6,7 +6,7 @@
 /*   By: eddos-sa <eddos-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/29 18:46:16 by eddos-sa          #+#    #+#             */
-/*   Updated: 2023/09/01 16:42:41 by eddos-sa         ###   ########.fr       */
+/*   Updated: 2023/09/01 16:54:26 by eddos-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,8 +33,3 @@ int	ft_putnbr(int nbr)
 	}
 	return (size);
 }
-
-/* int main(void)
-{
-	ft_putnbr(2);
-} */

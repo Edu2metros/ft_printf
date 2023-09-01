@@ -6,7 +6,7 @@
 /*   By: eddos-sa <eddos-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/01 15:37:06 by eddos-sa          #+#    #+#             */
-/*   Updated: 2023/09/01 16:50:53 by eddos-sa         ###   ########.fr       */
+/*   Updated: 2023/09/01 16:54:11 by eddos-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,20 +19,21 @@ int	format(const char *str, va_list ap)
 	size = 0;
 	if (*str == 'c')
 		size += ft_putchar(va_arg(ap, int));
-	else if(*str == 's')
+	else if (*str == 's')
 		size += ft_putstr(va_arg(ap, char *));
-	else if(*str == 'p')
+	else if (*str == 'p')
 		size += ft_putptr(va_arg(ap, void *));
-	else if(*str == 'd' || *str == 'i')
+	else if (*str == 'd' || *str == 'i')
 		size += ft_putnbr(va_arg(ap, int));
-	else if(*str == 'u')
+	else if (*str == 'u')
 		size += ft_unsint(va_arg(ap, int));
-	else if(*str == 'x' || *str == 'X')
+	else if (*str == 'x' || *str == 'X')
 		size += ft_puthex(va_arg(ap, int), *str);
-	else if(*str == '%')
+	else if (*str == '%')
 		size += ft_putchar('%');
-	return(size);
+	return (size);
 }
+
 int	ft_printf(const char *str, ...)
 {
 	size_t	sizetotal;
@@ -46,7 +47,7 @@ int	ft_printf(const char *str, ...)
 	va_start(ap, str);
 	while (*str)
 	{
-		if(*str == '%')
+		if (*str == '%')
 			size += format(++str, ap);
 		else
 			size = ft_putchar(*str);
@@ -54,10 +55,5 @@ int	ft_printf(const char *str, ...)
 		str++;
 	}
 	va_end(ap);
-	return(sizetotal);
-}
-
-int	main(void)
-{
-	ft_printf("%x\n", 9434);
+	return (sizetotal);
 }

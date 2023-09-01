@@ -6,14 +6,11 @@
 /*   By: eddos-sa <eddos-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/29 18:45:17 by eddos-sa          #+#    #+#             */
-/*   Updated: 2023/09/01 16:51:01 by eddos-sa         ###   ########.fr       */
+/*   Updated: 2023/09/01 16:54:45 by eddos-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-• %p The void * pointer argument has to be printed in hexadecimal format. */
 #include "printf.h"
-#include <stdio.h>
 
 int	ft_puthex(unsigned int nbr, char x)
 {

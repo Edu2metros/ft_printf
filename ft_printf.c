@@ -6,7 +6,7 @@
 /*   By: eddos-sa <eddos-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/01 15:37:06 by eddos-sa          #+#    #+#             */
-/*   Updated: 2023/09/01 19:36:23 by eddos-sa         ###   ########.fr       */
+/*   Updated: 2023/09/01 19:38:50 by eddos-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,12 +62,12 @@ int	ft_printf(const char *str, ...)
 	va_end(ap);
 	return (sizetotal);
 }
-
-/* int	main(void)
+#include <limits.h>
+int	main(void)
 {
-	int size = ft_printf("  %x  ", 10);
+	int size = ft_printf("  %i  ", INT_MIN);
 	printf("\n%i\n", size);
-	size = printf("  %x  ", 10);
+	size = printf("  %i  ", INT_MIN);
 	printf("\n%i\n", size);
 
-} */
+}

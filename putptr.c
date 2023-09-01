@@ -6,7 +6,7 @@
 /*   By: eddos-sa <eddos-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/01 14:35:08 by eddos-sa          #+#    #+#             */
-/*   Updated: 2023/09/01 20:10:40 by eddos-sa         ###   ########.fr       */
+/*   Updated: 2023/09/01 20:34:15 by eddos-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int	ft_putptr(void *ptr)
 	return (size);
 }
 
-int	puthex(unsigned long int nbr, char x)
+static int	puthex(unsigned long int nbr, char x)
 {
 	int	size;
 	int	digit;

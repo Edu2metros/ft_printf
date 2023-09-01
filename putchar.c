@@ -6,7 +6,7 @@
 /*   By: eddos-sa <eddos-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/29 18:46:01 by eddos-sa          #+#    #+#             */
-/*   Updated: 2023/08/30 17:46:29 by eddos-sa         ###   ########.fr       */
+/*   Updated: 2023/09/01 14:34:41 by eddos-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,11 @@ size_t	ft_putchar(char c)
 	size++;
 	return (size);
 }
-int put_percent(char c)
+
+int	put_percent(char c)
 {
-	int size;
+	int	size;
+
 	size = ft_putchar(c);
-	return(size);
+	return (size);
 }

@@ -6,7 +6,7 @@
 /*   By: eddos-sa <eddos-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/01 14:43:13 by eddos-sa          #+#    #+#             */
-/*   Updated: 2023/09/01 15:21:44 by eddos-sa         ###   ########.fr       */
+/*   Updated: 2023/09/01 15:22:57 by eddos-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,3 +60,7 @@ int ft_printf(const char *str, ...)
     return (printed); // Retorna o número total de caracteres impressos.
 }
 
+int main(void)
+{
+	ft_printf("%s\n", "akssof");
+}

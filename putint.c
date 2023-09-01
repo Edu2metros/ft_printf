@@ -6,7 +6,7 @@
 /*   By: eddos-sa <eddos-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/29 18:46:16 by eddos-sa          #+#    #+#             */
-/*   Updated: 2023/09/01 20:21:30 by eddos-sa         ###   ########.fr       */
+/*   Updated: 2023/09/01 20:22:59 by eddos-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,7 @@ int	ft_putnbr(int nbr)
 	size = 0;
 	if (nbr == -2147483648)
 	{
-		write(1, "-", 1);
-		size += 1;
+		size += write(1, "-", 1);
 		size += ft_putnbr(2);
 		size += ft_putnbr(147483648);
 	}
@@ -29,13 +28,11 @@ int	ft_putnbr(int nbr)
 	else if (nbr > 9)
 	{
 		size += ft_putnbr(nbr / 10);
-		ft_putchar(nbr % 10 + '0');
-		size += 1;
+		size += ft_putchar(nbr % 10 + '0');
 	}
 	else
 	{
-		ft_putchar('-');
-		size += 1;
+		size += ft_putchar('-');
 		size += ft_putnbr(nbr * -1);
 	}
 	return (size);

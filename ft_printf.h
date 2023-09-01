@@ -6,7 +6,7 @@
 /*   By: eddos-sa <eddos-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/29 18:45:39 by eddos-sa          #+#    #+#             */
-/*   Updated: 2023/09/01 17:18:06 by eddos-sa         ###   ########.fr       */
+/*   Updated: 2023/09/01 17:44:43 by eddos-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 # include <stdlib.h>
 # include <unistd.h>
 
+int		ft_printf(const char *str, ...);
 size_t	ft_putchar(char c);
 char	*ft_itoa(int n);
 size_t	ft_putstr(char *str);

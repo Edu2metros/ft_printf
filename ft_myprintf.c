@@ -6,7 +6,7 @@
 /*   By: eddos-sa <eddos-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/01 15:37:06 by eddos-sa          #+#    #+#             */
-/*   Updated: 2023/09/01 16:45:22 by eddos-sa         ###   ########.fr       */
+/*   Updated: 2023/09/01 16:48:46 by eddos-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,11 +23,11 @@ int	format(const char *str, va_list ap)
 		size += ft_putstr(va_arg(ap, char *));
 	else if(*str == 'p')
 		size += ft_putptr(va_arg(ap, void *));
-	else if(*str == 'd' && *str == 'i')
+	else if(*str == 'd' || *str == 'i')
 		size += ft_putnbr(va_arg(ap, int));
 	else if(*str == 'u')
 		size += ft_unsint(va_arg(ap, int));
-	else if(*str == 'x' && *str == 'X')
+	else if(*str == 'x' || *str == 'X')
 		size += ft_puthex(va_arg(ap, int), *str);
 	else if(*str == '%')
 		size += ft_putchar('%');
@@ -38,9 +38,9 @@ int	ft_printf(const char *str, ...)
 	size_t	sizetotal;
 	size_t	size;
 
-	va_list(ap);
 	sizetotal = 0;
 	size = 0;
+	va_list(ap);
 	if (!str)
 		return (-1);
 	va_start(ap, str);
@@ -59,5 +59,5 @@ int	ft_printf(const char *str, ...)
 
 int	main(void)
 {
-	ft_printf("%i\n", 23);
+	ft_printf("%x\n", 9434);
 }

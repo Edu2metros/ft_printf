@@ -6,7 +6,7 @@
 /*   By: eddos-sa <eddos-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/01 15:37:06 by eddos-sa          #+#    #+#             */
-/*   Updated: 2023/09/01 18:09:19 by eddos-sa         ###   ########.fr       */
+/*   Updated: 2023/09/01 18:19:02 by eddos-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,12 +62,10 @@ int	ft_printf(const char *str, ...)
 	va_end(ap);
 	return (sizetotal);
 }
-/* #include <stdio.h>
-int	main(void)
+#include <stdio.h>
+#include <limits.h>
+int main(void)
 {
-	int size;
-	size = ft_printf(" %c ", '0');
-	printf("a quantidade de bytes imprimidos é:%i\n", size);
-	size = printf(" %c ", '0');
-	printf("a quantidade de bytes imprimidos é: %i\n", size);
-} */
+	printf("%p  %p\n", LONG_MIN);
+	ft_printf("%p %p\n", LONG_MIN);;
+}

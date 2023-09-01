@@ -6,7 +6,7 @@
 /*   By: eddos-sa <eddos-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/01 14:43:13 by eddos-sa          #+#    #+#             */
-/*   Updated: 2023/09/01 15:22:57 by eddos-sa         ###   ########.fr       */
+/*   Updated: 2023/09/01 15:29:15 by eddos-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,13 +24,13 @@ int ft_parse(const char *str, va_list ap)
     else if (*str == 'd' || *str == 'i') // Verifica se o caractere atual é 'd' ou 'i'.
         offset = ft_putnbr(va_arg(ap, int)); // Chama a função 'ft_putnbr' com o argumento obtido através de 'va_arg'.
     else if (*str == 'u') // Verifica se o caractere atual é 'u'.
-        offset = ft_putunbr(va_arg(ap, unsigned int)); // Chama a função 'ft_putunbr' com o argumento obtido através de 'va_arg'.
+        offset = ft_putnbr(va_arg(ap, unsigned int)); // Chama a função 'ft_putunbr' com o argumento obtido através de 'va_arg'.
     else if (*str == 'x') // Verifica se o caractere atual é 'x'.
         offset = ft_puthex(va_arg(ap, unsigned int), 0); // Chama a função 'ft_puthex' com argumentos obtidos através de 'va_arg'.
     else if (*str == 'X') // Verifica se o caractere atual é 'X'.
         offset = ft_puthex(va_arg(ap, unsigned int), 1); // Chama a função 'ft_puthex' com argumentos obtidos através de 'va_arg'.
     else if (*str == 'p') // Verifica se o caractere atual é 'p'.
-        offset = ft_putptr(va_arg(ap, void *)); // Chama a função 'ft_putptr' com o argumento obtido através de 'va_arg'.
+        offset = putptr(va_arg(ap, void *)); // Chama a função 'ft_putptr' com o argumento obtido através de 'va_arg'.
     else if (*str == '%') // Verifica se o caractere atual é '%'.
         offset = ft_putchar('%'); // Chama a função 'ft_putchar' para imprimir o caractere '%'.
     return (offset); // Retorna o valor de 'offset', que representa o número de caracteres impressos.
@@ -62,5 +62,5 @@ int ft_printf(const char *str, ...)
 
 int main(void)
 {
-	ft_printf("%s\n", "akssof");
+	ft_printf("%%\n");
 }

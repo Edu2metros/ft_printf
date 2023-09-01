@@ -6,13 +6,13 @@
 /*   By: eddos-sa <eddos-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/29 18:45:17 by eddos-sa          #+#    #+#             */
-/*   Updated: 2023/09/01 19:57:44 by eddos-sa         ###   ########.fr       */
+/*   Updated: 2023/09/01 20:04:55 by eddos-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_puthex(unsigned long int nbr, char x)
+int	ft_puthex(unsigned int nbr, char x)
 {
 	int	size;
 	int	digit;

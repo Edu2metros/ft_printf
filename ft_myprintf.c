@@ -6,7 +6,7 @@
 /*   By: eddos-sa <eddos-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/01 15:37:06 by eddos-sa          #+#    #+#             */
-/*   Updated: 2023/09/01 16:07:22 by eddos-sa         ###   ########.fr       */
+/*   Updated: 2023/09/01 16:10:42 by eddos-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,17 @@
 
 int	ft_printf(const char *str, ...)
 {
-	va_list(ap);
-	size_t size;
-	size = 0;
+	size_t	size;
 
+	va_list(ap);
+	size = 0;
+	if (!str)
+		return (-1);
 	va_start(ap, str);
-	if(!str)
-		return(-1);
-	return(size);
+	
 }
 
-int main(void)
+int	main(void)
 {
 	printf("%i");
 }

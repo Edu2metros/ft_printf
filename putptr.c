@@ -6,11 +6,11 @@
 /*   By: eddos-sa <eddos-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/01 14:35:08 by eddos-sa          #+#    #+#             */
-/*   Updated: 2023/09/01 16:40:18 by eddos-sa         ###   ########.fr       */
+/*   Updated: 2023/09/01 17:18:26 by eddos-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
 int	ft_putptr(void *ptr)
 {

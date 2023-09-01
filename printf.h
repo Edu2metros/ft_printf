@@ -6,7 +6,7 @@
 /*   By: eddos-sa <eddos-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/29 18:45:39 by eddos-sa          #+#    #+#             */
-/*   Updated: 2023/09/01 16:37:42 by eddos-sa         ###   ########.fr       */
+/*   Updated: 2023/09/01 16:38:36 by eddos-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,5 @@ int		ft_putnbr(int nbr);
 int		ft_unsint(unsigned int nbr);
 int		ft_puthex(unsigned int nbr, char x);
 int		ft_putptr(void *ptr);
-size_t	ft_putstr(char *str);
 
 #endif

@@ -6,14 +6,14 @@
 /*   By: eddos-sa <eddos-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/29 18:45:39 by eddos-sa          #+#    #+#             */
-/*   Updated: 2023/09/01 17:49:36 by eddos-sa         ###   ########.fr       */
+/*   Updated: 2023/09/01 17:52:11 by eddos-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
-
 # include <stdarg.h>
+# include <stdlib.h>
 # include <unistd.h>
 
 int		ft_printf(const char *str, ...);

@@ -6,11 +6,12 @@
 /*   By: eddos-sa <eddos-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/01 14:35:08 by eddos-sa          #+#    #+#             */
-/*   Updated: 2023/09/01 20:05:49 by eddos-sa         ###   ########.fr       */
+/*   Updated: 2023/09/01 20:08:09 by eddos-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
+static int	puthex(unsigned long int nbr, char x);
 
 int	ft_putptr(void *ptr)
 {
